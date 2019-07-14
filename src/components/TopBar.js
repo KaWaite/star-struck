@@ -28,8 +28,6 @@ class TopBar extends Component {
             </TopAppBarSection>
           </TopAppBarRow>
         </TopAppBar>
-
-        {/* <div style={{ height: "100rem", padding: "1rem" }}>Scroll Me</div> */}
       </div>
     );
   }

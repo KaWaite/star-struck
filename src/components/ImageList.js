@@ -58,22 +58,22 @@ export default class List extends Component {
   render() {
     const articleItems = this.state.articles.map(article => (
       <GridCell span={4} phone={12}>
-        <Card style={{ backgroundColor: "rgb(255, 255, 255)" }}>
+        <Card theme="background">
           <CardPrimaryAction>
             <CardMedia
               sixteenByNine
               style={{
-                backgroundImage: "url(../images/iu.jpg)"
+                backgroundImage: "url(images/iu.jpg)"
               }}
             />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>
-              <Typography use="headline6" tag="h2">
+              <Typography use="headline6" tag="h2" theme="textPrimaryOnDark">
                 {article.title}
               </Typography>
               <Typography
                 use="subtitle2"
                 tag="h3"
-                theme="textSecondaryOnBackground"
+                theme="textPrimaryOnDark"
                 style={{ marginTop: "-1rem" }}
               >
                 by {article.author}
@@ -82,7 +82,7 @@ export default class List extends Component {
                 mdc-typography-overflow-ellipsis
                 use="body1"
                 tag="div"
-                theme="textSecondaryOnBackground"
+                theme="textPrimaryOnDark"
               >
                 {article.content}
               </Typography>
@@ -90,11 +90,17 @@ export default class List extends Component {
           </CardPrimaryAction>
           <CardActions>
             <CardActionButtons>
-              <CardActionButton>Read More..</CardActionButton>
+              <CardActionButton theme="textPrimaryOnDark">
+                Read More..
+              </CardActionButton>
               {/* <CardActionButton>Bookmark</CardActionButton> */}
             </CardActionButtons>
             <CardActionIcons>
-              <CardActionIcon onIcon="favorite" icon="favorite_border" />
+              <CardActionIcon
+                theme="textPrimaryOnDark"
+                onIcon="favorite"
+                icon="favorite_border"
+              />
               {/* <CardActionIcon icon="share" />
               <CardActionIcon icon="more_vert" /> */}
             </CardActionIcons>
@@ -102,10 +108,6 @@ export default class List extends Component {
         </Card>
       </GridCell>
     ));
-    return (
-      <div>
-        <Grid>{articleItems}</Grid>
-      </div>
-    );
+    return <Grid>{articleItems}</Grid>;
   }
 }

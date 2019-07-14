@@ -15,12 +15,16 @@ import "@material/icon-button/dist/mdc.icon-button.css";
 export default class News extends Component {
   render() {
     return (
-      <Card outlined style={{ margin: "10px 20px", backgroundColor: "rgba" }}>
+      <Card
+        theme="background"
+        outlined
+        style={{ margin: "10px 20px", border: "none" }}
+      >
         <Typography
           use="headline6"
           tag="div"
           style={{ padding: "0.5rem 1rem" }}
-          theme="textSecondaryOnBackground"
+          theme="textPrimaryOnDark"
         >
           Space News
         </Typography>
@@ -29,10 +33,10 @@ export default class News extends Component {
 
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
-            <Typography use="headline5" tag="div">
+            <Typography theme="textPrimaryOnDark" use="headline5" tag="div">
               Copper on the rise
             </Typography>
-            <Typography use="body1" tag="p" theme="textSecondaryOnBackground">
+            <Typography use="body1" tag="p" theme="textPrimaryOnDark">
               Copper price soars amid global market optimism and increased
               demand.
             </Typography>
@@ -43,10 +47,10 @@ export default class News extends Component {
 
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
-            <Typography use="headline5" tag="div">
+            <Typography use="headline5" tag="div" theme="textPrimaryOnDark">
               U.S. tech startups rebound
             </Typography>
-            <Typography use="body1" tag="p" theme="textSecondaryOnBackground">
+            <Typography use="body1" tag="p" theme="textPrimaryOnDark">
               Favorable business conditions have allowed startups to secure more
               fundraising deals compared to last year.
             </Typography>
@@ -57,10 +61,10 @@ export default class News extends Component {
 
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
-            <Typography use="headline5" tag="div">
+            <Typography use="headline5" tag="div" theme="textPrimaryOnDark">
               Asia's clean energy ambitions
             </Typography>
-            <Typography use="body1" tag="p" theme="textSecondaryOnBackground">
+            <Typography use="body1" tag="p" theme="textPrimaryOnDark">
               China plans to invest billions of dollars for the development of
               over 300 clean energy projects in Southeast Asia.
             </Typography>
@@ -73,6 +77,7 @@ export default class News extends Component {
           <CardActionButton
             label="All Business Headlines"
             trailingIcon="arrow_forward"
+            theme="textPrimaryOnDark"
           />
         </CardActions>
       </Card>
