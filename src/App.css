@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.list {
+  padding: 100px;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

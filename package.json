@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rmwc/button": "^5.5.2",
+    "@rmwc/card": "^5.5.2",
+    "@rmwc/drawer": "^5.5.2",
+    "@rmwc/grid": "^5.5.2",
+    "@rmwc/icon": "^5.5.2",
+    "@rmwc/image-list": "^5.5.2",
+    "@rmwc/list": "^5.5.2",
+    "@rmwc/menu": "^5.5.2",
+    "@rmwc/provider": "^5.5.2",
+    "@rmwc/theme": "^5.5.2",
+    "@rmwc/top-app-bar": "^5.5.2",
+    "@rmwc/typography": "^5.5.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

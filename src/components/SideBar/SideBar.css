@@ -1,0 +1,15 @@
+.mapButton {
+}
+
+.mapMenu {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-top: 50vh;
+  display: inline-block;
+}
+.button {
+  background-color: red;
+}

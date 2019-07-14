@@ -1,0 +1,13 @@
+#landing {
+  height: 100vh;
+  background-image: url("../images/space.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center; /* align vertical */
+}
+#dialog {
+  padding-left: 50px;
+}
