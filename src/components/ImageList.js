@@ -35,8 +35,7 @@ export default class List extends Component {
           image: Image1,
           title: "Our Changing Planet",
           author: "Curt Wagner",
-          content:
-            "Visit nine places on our planet that are undergoing the biggest changes today."
+          content: "Visit nine places on our planet."
         },
         {
           id: 1,
@@ -58,20 +57,13 @@ export default class List extends Component {
           title: "Planet Earth",
           author: "Bobby Marlye",
           content: "Hello from Space."
-        },
-        {
-          id: 4,
-          image: Image5,
-          title: "Mars: a love story",
-          author: "Nick Spark",
-          content: "The notebook was my only success."
         }
       ]
     };
   }
   render() {
     const articleItems = this.state.articles.map(article => (
-      <GridCell span={4} phone={12}>
+      <GridCell span={6} phone={12}>
         <Card
           style={{
             border: "none",

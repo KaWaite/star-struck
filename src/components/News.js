@@ -24,13 +24,13 @@ export default class News extends Component {
         <Typography
           use="headline6"
           tag="div"
+          theme="textPrimaryOnDark"
           style={{
             padding: "0.5rem 1rem",
-            background: "rgba(250,250,250, 0.9)",
             fontWeight: "bold"
           }}
         >
-          Space News
+          latest
         </Typography>
 
         <ListDivider />

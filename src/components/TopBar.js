@@ -17,14 +17,14 @@ class TopBar extends Component {
   render() {
     return (
       <div>
-        <TopAppBar short>
+        <TopAppBar short dense>
           <TopAppBarRow>
             <TopAppBarSection alignStart>
-              <TopAppBarNavigationIcon icon="menu" />
+              <TopAppBarNavigationIcon icon="toll" />
               <TopAppBarTitle>Home</TopAppBarTitle>
             </TopAppBarSection>
             <TopAppBarSection alignEnd>
-              <TopAppBarActionItem icon="star" />
+              <TopAppBarActionItem icon="file_download" />
             </TopAppBarSection>
           </TopAppBarRow>
         </TopAppBar>

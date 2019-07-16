@@ -4,7 +4,7 @@ import Landing from "./components/Landing/Landing";
 import InfoBar from "./components/InfoBar";
 import Footer from "./components/Footer";
 
-import Exp from "./components/Exp";
+import Planets from "./components/Planets";
 import SideBar from "./components/SideBar/SideBar";
 import { ThemeProvider } from "@rmwc/theme";
 import "@material/theme/dist/mdc.theme.css";
@@ -44,8 +44,8 @@ function App() {
         {/* <SideBar /> */}
         <TopBar />
         <Landing />
-        <InfoBar />;
-        <Exp />
+        <InfoBar />
+        <Planets />
         <Footer />
       </div>
     </ThemeProvider>
