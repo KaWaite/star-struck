@@ -16,15 +16,19 @@ export default class News extends Component {
   render() {
     return (
       <Card
-        theme="background"
-        outlined
-        style={{ margin: "10px 20px", border: "none" }}
+        style={{
+          marginRight: "80px",
+          boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
+        }}
       >
         <Typography
           use="headline6"
           tag="div"
-          style={{ padding: "0.5rem 1rem" }}
-          theme="textPrimaryOnDark"
+          style={{
+            padding: "0.5rem 1rem",
+            background: "rgba(250,250,250, 0.9)",
+            fontWeight: "bold"
+          }}
         >
           Space News
         </Typography>

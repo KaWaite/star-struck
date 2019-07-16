@@ -10,11 +10,20 @@ import {
   CardActionIcon
 } from "@rmwc/card";
 import { Grid, GridCell } from "@rmwc/grid";
-import "@material/layout-grid/dist/mdc.layout-grid.css";
 import { Typography } from "@rmwc/typography";
+
+// Styling Imports
+import "@material/layout-grid/dist/mdc.layout-grid.css";
 import "@material/card/dist/mdc.card.css";
 import "@material/button/dist/mdc.button.css";
 import "@material/icon-button/dist/mdc.icon-button.css";
+
+// Planet Image imports
+import Image1 from "../images/iu.jpg";
+import Image2 from "../images/iu2.jpg";
+import Image3 from "../images/mercury2.gif";
+import Image4 from "../images/iu.jpg";
+import Image5 from "../images/iu2.jpg";
 
 export default class List extends Component {
   constructor(props) {
@@ -23,6 +32,7 @@ export default class List extends Component {
       articles: [
         {
           id: 0,
+          image: Image1,
           title: "Our Changing Planet",
           author: "Curt Wagner",
           content:
@@ -30,24 +40,28 @@ export default class List extends Component {
         },
         {
           id: 1,
+          image: Image2,
           title: "Our Planet",
           author: "Chir Agner",
           content: "Visit nine places on our planet."
         },
         {
           id: 2,
+          image: Image3,
           title: "Changing Planet",
           author: "Yabai Man",
           content: "The biggest changes today."
         },
         {
           id: 3,
+          image: Image4,
           title: "Planet Earth",
           author: "Bobby Marlye",
           content: "Hello from Space."
         },
         {
           id: 4,
+          image: Image5,
           title: "Mars: a love story",
           author: "Nick Spark",
           content: "The notebook was my only success."
@@ -58,12 +72,17 @@ export default class List extends Component {
   render() {
     const articleItems = this.state.articles.map(article => (
       <GridCell span={4} phone={12}>
-        <Card theme="background">
+        <Card
+          style={{
+            border: "none",
+            boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
+          }}
+        >
           <CardPrimaryAction>
             <CardMedia
               sixteenByNine
               style={{
-                backgroundImage: "url(images/iu.jpg)"
+                backgroundImage: `url(${article.image})`
               }}
             />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>

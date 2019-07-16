@@ -17,11 +17,11 @@ export default function InfoBar() {
           "linear-gradient(to top, #323232, #121212)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }}
     >
-      <div style={{ margin: "auto", paddingTop: "10vh", width: "85%" }}>
+      <div style={{ margin: "auto", paddingTop: "20vh", width: "80%" }}>
         <Typography
           use="headline3"
+          theme="textPrimaryOnDark"
           style={{
-            color: "rgb(250,250,250)",
             borderBottom: "solid 1px",
             display: "block",
             width: "60%",
@@ -33,7 +33,7 @@ export default function InfoBar() {
           contents
         </Typography>
 
-        <Grid>
+        <Grid style={{ paddingTop: "5vh" }}>
           <GridCell span={4}>
             <News />
           </GridCell>
