@@ -7,7 +7,7 @@ import TopBar from "./components/TopBar/TopBar";
 import Landing from "./components/Landing/Landing";
 import InfoBar from "./components/InfoBar";
 import Footer from "./components/Footer";
-import ImageOTD from "./components/ImageOTD";
+import ImageOTD from "./components/ImageOTD/ImageOTD";
 import Planets from "./components/Planets/Planets";
 import Planet from "./components/Planet";
 
@@ -77,13 +77,13 @@ class App extends Component {
       >
         <Router>
           <>
-            <TopBar />
             <ScrollToTop>
               <Route
                 exact
                 path="/"
                 render={() => (
                   <>
+                    <TopBar />
                     <Landing handleClick={this.handleClick} />
                     <InfoBar />
                     <Planets />
@@ -95,6 +95,7 @@ class App extends Component {
                 path="/image"
                 render={() => (
                   <>
+                    <TopBar />
                     <ImageOTD image={imageURL} />
                   </>
                 )}

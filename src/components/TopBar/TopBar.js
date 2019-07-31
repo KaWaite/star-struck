@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import {
   TopAppBar,
   TopAppBarRow,
   TopAppBarSection,
   TopAppBarNavigationIcon,
-  TopAppBarTitle,
+  // TopAppBarTitle,
   TopAppBarActionItem
   // TopAppBarFixedAdjust
 } from "@rmwc/top-app-bar";
 import "@material/top-app-bar/dist/mdc.top-app-bar.css";
 // import SideBar from "./SideBar/SideBar";
 
-import Modal from "../Modal";
+import Modal from "../Modal/Modal";
 
 class TopBar extends Component {
   constructor(props) {
@@ -35,14 +34,9 @@ class TopBar extends Component {
           <TopAppBarRow>
             <TopAppBarSection alignStart>
               <TopAppBarNavigationIcon icon="toll" onClick={this.toggle} />
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <TopAppBarTitle>Home</TopAppBarTitle>
-              </Link>
             </TopAppBarSection>
             <TopAppBarSection alignEnd>
-              <Link to="/image" style={{ textDecoration: "none" }}>
-                <TopAppBarActionItem icon="file_download" />
-              </Link>
+              <TopAppBarActionItem icon="file_download" />
             </TopAppBarSection>
           </TopAppBarRow>
         </TopAppBar>
