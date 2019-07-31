@@ -1,13 +1,31 @@
 #landing {
   height: 100vh;
-  background-image: url("../../images/space.jpg");
+  background-image: url("../../images/landing.jpg");
   background-position: center;
   background-size: cover;
   color: white;
-  display: flex;
-  justify-content: left;
+  position: relative;
   align-items: center; /* align vertical */
 }
 #dialog {
+  position: absolute;
   padding-left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#scroll {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #dialog {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #subtitle {
+    display: none;
+  }
 }

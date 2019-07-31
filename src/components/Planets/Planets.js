@@ -1,7 +1,7 @@
 import React from "react";
-import PlanetCards from "./PlanetCards";
+import PlanetCards from "../PlanetCards/PlanetCards";
 
-import { Grid, GridCell } from "@rmwc/grid";
+import { Grid } from "@rmwc/grid";
 import { Typography } from "@rmwc/typography";
 import "@material/typography/dist/mdc.typography.css";
 

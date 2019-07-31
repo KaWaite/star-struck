@@ -15,8 +15,12 @@
     "@rmwc/theme": "^5.5.2",
     "@rmwc/top-app-bar": "^5.5.2",
     "@rmwc/typography": "^5.5.2",
+    "axios": "^0.19.0",
+    "leaflet": "^1.5.1",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {

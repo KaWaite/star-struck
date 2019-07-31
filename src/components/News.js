@@ -17,12 +17,11 @@ export default class News extends Component {
     return (
       <Card
         style={{
-          marginRight: "80px",
-          boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
+          marginRight: "80px"
         }}
       >
         <Typography
-          use="headline6"
+          use="headline5"
           tag="div"
           theme="textPrimaryOnDark"
           style={{

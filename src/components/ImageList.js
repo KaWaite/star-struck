@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import {
   Card,
   CardPrimaryAction,
-  CardMedia,
-  CardActions,
-  CardActionButtons,
-  CardActionButton,
-  CardActionIcons,
-  CardActionIcon
+  CardMedia
+  // CardActions,
+  // CardActionButtons,
+  // CardActionButton,
+  // CardActionIcons,
+  // CardActionIcon
 } from "@rmwc/card";
 import { Grid, GridCell } from "@rmwc/grid";
 import { Typography } from "@rmwc/typography";
@@ -19,11 +19,10 @@ import "@material/button/dist/mdc.button.css";
 import "@material/icon-button/dist/mdc.icon-button.css";
 
 // Planet Image imports
-import Image1 from "../images/iu.jpg";
-import Image2 from "../images/iu2.jpg";
-import Image3 from "../images/mercury2.gif";
-import Image4 from "../images/iu.jpg";
-import Image5 from "../images/iu2.jpg";
+import Image1 from "../images/space.jpg";
+import Image2 from "../images/moon.jpg";
+import Image3 from "../images/launch.jpg";
+import Image4 from "../images/astro.jpg";
 
 export default class List extends Component {
   constructor(props) {
@@ -67,7 +66,8 @@ export default class List extends Component {
         <Card
           style={{
             border: "none",
-            boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
+            boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)",
+            margin: "0 20px 20px 0 "
           }}
         >
           <CardPrimaryAction>
@@ -78,44 +78,22 @@ export default class List extends Component {
               }}
             />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>
-              <Typography use="headline6" tag="h2" theme="textPrimaryOnDark">
+              <Typography use="headline5" tag="h1" theme="textPrimaryOnDark">
                 {article.title}
               </Typography>
               <Typography
                 use="subtitle2"
-                tag="h3"
+                tag="h4"
                 theme="textPrimaryOnDark"
                 style={{ marginTop: "-1rem" }}
               >
                 by {article.author}
               </Typography>
-              <Typography
-                mdc-typography-overflow-ellipsis
-                use="body1"
-                tag="div"
-                theme="textPrimaryOnDark"
-              >
+              <Typography use="body2" tag="div" theme="textPrimaryOnDark">
                 {article.content}
               </Typography>
             </div>
           </CardPrimaryAction>
-          <CardActions>
-            <CardActionButtons>
-              <CardActionButton theme="textPrimaryOnDark">
-                Read More..
-              </CardActionButton>
-              {/* <CardActionButton>Bookmark</CardActionButton> */}
-            </CardActionButtons>
-            <CardActionIcons>
-              <CardActionIcon
-                theme="textPrimaryOnDark"
-                onIcon="favorite"
-                icon="favorite_border"
-              />
-              {/* <CardActionIcon icon="share" />
-              <CardActionIcon icon="more_vert" /> */}
-            </CardActionIcons>
-          </CardActions>
         </Card>
       </GridCell>
     ));

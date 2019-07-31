@@ -3,23 +3,23 @@ import {
   Card,
   CardPrimaryAction,
   CardMedia,
-  CardMediaContent,
-  CardActions,
-  CardActionIcon,
-  CardActionIcons
+  CardMediaContent
+  // CardActions,
+  // CardActionIcon,
+  // CardActionIcons
 } from "@rmwc/card";
-import { Grid, GridCell } from "@rmwc/grid";
+import { GridCell } from "@rmwc/grid";
 import { Typography } from "@rmwc/typography";
 
 // Image Imports
-import Mercury from "../images/small_images/484px-Mercury.jpg";
-import Venus from "../images/small_images/venus.jpg";
-import Earth from "../images/small_images/483px-Earth.png";
-import Mars from "../images/small_images/480px-Mars.jpg";
-import Jupiter from "../images/small_images/Jupiter.jpg";
-import Saturn from "../images/small_images/640px-Saturn.jpg";
-import Uranus from "../images/small_images/480px-Uranus.jpg";
-import Neptune from "../images/small_images/480px-Neptune.jpg";
+import Mercury from "../../images/small_images/484px-Mercury.jpg";
+import Venus from "../../images/small_images/venus.jpg";
+import Earth from "../../images/small_images/483px-Earth.png";
+import Mars from "../../images/small_images/480px-Mars.jpg";
+import Jupiter from "../../images/small_images/Jupiter.jpg";
+import Saturn from "../../images/small_images/640px-Saturn.jpg";
+import Uranus from "../../images/small_images/480px-Uranus.jpg";
+import Neptune from "../../images/small_images/480px-Neptune.jpg";
 
 export default class Exp extends Component {
   constructor(props) {
@@ -71,10 +71,9 @@ export default class Exp extends Component {
   }
   render() {
     const planets = this.state.planets.map(planet => (
-      <GridCell span={3} phone={12}>
+      <GridCell desktop={3} tablet={4} phone={6}>
         <Card
           style={{
-            width: "12.5rem",
             boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 1)",
             margin: "1rem"
           }}
