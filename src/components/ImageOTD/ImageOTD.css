@@ -1,8 +1,6 @@
 #image-container {
   color: white;
-  text-align: center;
-  background: red;
-  height: 100vh;
+  /* text-align: center; */
 }
 #image {
   max-width: 80%;

@@ -9,7 +9,7 @@ import InfoBar from "./components/InfoBar";
 import Footer from "./components/Footer";
 import ImageOTD from "./components/ImageOTD/ImageOTD";
 import Planets from "./components/Planets/Planets";
-import Planet from "./components/Planet";
+import Planet from "./components/PlanetPages/Mercury";
 
 // Styles
 import { ThemeProvider } from "@rmwc/theme";
@@ -104,6 +104,7 @@ class App extends Component {
                 path="/planet"
                 render={() => (
                   <>
+                    <TopBar />
                     <Planet />
                   </>
                 )}
