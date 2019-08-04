@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardPrimaryAction,
@@ -85,34 +86,30 @@ export default class Exp extends Component {
                 backgroundImage: `url(${planet.image})`
               }}
             >
-              <CardMediaContent>
-                <Typography
-                  use="headline6"
-                  tag="div"
-                  theme="textPrimaryOnDark"
-                  style={{
-                    padding: "0.5rem 1rem",
-                    backgroundImage:
-                      "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%)",
-                    bottom: "0",
-                    left: "0",
-                    right: "0",
-                    position: "absolute",
-                    fontWeight: "bold"
-                  }}
-                >
-                  {planet.name}
-                </Typography>
-              </CardMediaContent>
+              <Link to={`/${planet.name}`} className="link">
+                <CardMediaContent>
+                  <Typography
+                    use="headline6"
+                    tag="div"
+                    theme="textPrimaryOnDark"
+                    style={{
+                      padding: "0.5rem 1rem",
+                      backgroundImage:
+                        "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%)",
+                      bottom: "0",
+                      left: "0",
+                      right: "0",
+                      position: "absolute",
+                      fontWeight: "bold"
+                    }}
+                  >
+                    {planet.name}
+                  </Typography>
+                </CardMediaContent>
+              </Link>
+              >
             </CardMedia>
           </CardPrimaryAction>
-          {/* <CardActions>
-            <CardActionIcons>
-              <CardActionIcon onIcon="favorite" icon="favorite_border" />
-              <CardActionIcon icon="bookmark_border" />
-              <CardActionIcon icon="share" />
-            </CardActionIcons>
-          </CardActions> */}
         </Card>
       </GridCell>
     ));

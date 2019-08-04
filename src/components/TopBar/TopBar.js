@@ -3,15 +3,13 @@ import {
   TopAppBar,
   TopAppBarRow,
   TopAppBarSection,
-  TopAppBarNavigationIcon,
-  // TopAppBarTitle,
   TopAppBarActionItem
-  // TopAppBarFixedAdjust
 } from "@rmwc/top-app-bar";
 import "@material/top-app-bar/dist/mdc.top-app-bar.css";
-// import SideBar from "./SideBar/SideBar";
+import { Button } from "@rmwc/button";
 
 import Modal from "../Modal/Modal";
+import Logo from "../Logo";
 
 class TopBar extends Component {
   constructor(props) {
@@ -33,7 +31,9 @@ class TopBar extends Component {
         <TopAppBar short dense>
           <TopAppBarRow>
             <TopAppBarSection alignStart>
-              <TopAppBarNavigationIcon icon="toll" onClick={this.toggle} />
+              <Button onClick={this.toggle}>
+                <Logo />
+              </Button>
             </TopAppBarSection>
             <TopAppBarSection alignEnd>
               <TopAppBarActionItem icon="file_download" />

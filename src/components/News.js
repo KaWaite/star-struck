@@ -37,11 +37,10 @@ export default class News extends Component {
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
             <Typography theme="textPrimaryOnDark" use="headline5" tag="div">
-              Copper on the rise
+              SpaceX To The Rescue
             </Typography>
             <Typography use="body1" tag="p" theme="textPrimaryOnDark">
-              Copper price soars amid global market optimism and increased
-              demand.
+              Elon Musk is coming to the rescue at SpaceX. Learn More.
             </Typography>
           </div>
         </CardPrimaryAction>
@@ -51,11 +50,11 @@ export default class News extends Component {
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
             <Typography use="headline5" tag="div" theme="textPrimaryOnDark">
-              U.S. tech startups rebound
+              U.S. Space tech startups on the rise
             </Typography>
             <Typography use="body1" tag="p" theme="textPrimaryOnDark">
-              Favorable business conditions have allowed startups to secure more
-              fundraising deals compared to last year.
+              Favorable space business conditions have allowed startups to
+              secure more fundraising deals compared to last year.
             </Typography>
           </div>
         </CardPrimaryAction>
@@ -65,11 +64,11 @@ export default class News extends Component {
         <CardPrimaryAction>
           <div style={{ padding: "1rem" }}>
             <Typography use="headline5" tag="div" theme="textPrimaryOnDark">
-              Asia's clean energy ambitions
+              Asia's clean energy ambitions for Space
             </Typography>
             <Typography use="body1" tag="p" theme="textPrimaryOnDark">
               China plans to invest billions of dollars for the development of
-              over 300 clean energy projects in Southeast Asia.
+              over 300 clean energy projects in Southeast Asia for space.
             </Typography>
           </div>
         </CardPrimaryAction>

@@ -6,6 +6,7 @@
     "@rmwc/button": "^5.5.2",
     "@rmwc/card": "^5.5.2",
     "@rmwc/drawer": "^5.5.2",
+    "@rmwc/elevation": "^5.6.0",
     "@rmwc/grid": "^5.5.2",
     "@rmwc/icon": "^5.5.2",
     "@rmwc/image-list": "^5.5.2",

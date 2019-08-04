@@ -4,8 +4,8 @@ import { Typography } from "@rmwc/typography";
 import { Card, CardMedia } from "@rmwc/card";
 import { Elevation } from "@rmwc/elevation";
 
-// Image import
-import Mercury from "../../images/large_images/Mercury_large.jpg";
+// Image imports
+import Earth from "../../images/large_images/Earth_large.png";
 
 // CSS
 import "./PlanetPage.css";
@@ -19,27 +19,28 @@ import "@material/button/dist/mdc.button.css";
 import "@material/icon-button/dist/mdc.icon-button.css";
 import "@material/elevation/dist/mdc.elevation.css";
 
-export default function InfoBar() {
+function InfoBar() {
   return (
     <div className="planet-container">
       <div
         className="planet-background"
         style={{
-          backgroundImage: `url(${Mercury})`
+          backgroundImage: `url(${Earth})`
         }}
       />
       <Elevation z={4} key={5} className="planet-content">
         <Card className="card">
           <CardMedia
+            className="planet-image"
             square
             style={{
-              backgroundImage: `url(${Mercury})`
+              backgroundImage: `url(${Earth})`
             }}
           />
         </Card>
         <div className="card-content">
           <Typography use="headline2" className="header-underlined">
-            Mercury
+            Earth
           </Typography>
           <Typography use="body1">
             This is going to be the description of the planet.This is going to
@@ -62,3 +63,5 @@ export default function InfoBar() {
     </div>
   );
 }
+
+export default InfoBar;

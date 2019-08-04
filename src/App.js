@@ -9,7 +9,15 @@ import InfoBar from "./components/InfoBar";
 import Footer from "./components/Footer";
 import ImageOTD from "./components/ImageOTD/ImageOTD";
 import Planets from "./components/Planets/Planets";
-import Planet from "./components/PlanetPages/Mercury";
+
+import Mercury from "./components/PlanetPages/Mercury";
+import Venus from "./components/PlanetPages/Venus";
+import Earth from "./components/PlanetPages/Earth";
+import Mars from "./components/PlanetPages/Mars";
+import Jupiter from "./components/PlanetPages/Jupiter";
+import Saturn from "./components/PlanetPages/Saturn";
+import Uranus from "./components/PlanetPages/Uranus";
+import Neptune from "./components/PlanetPages/Neptune";
 
 // Styles
 import { ThemeProvider } from "@rmwc/theme";
@@ -24,7 +32,6 @@ class App extends Component {
     this.state = {
       imageURL: ""
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -38,10 +45,6 @@ class App extends Component {
       .catch(error => {
         console.log(error);
       });
-  }
-
-  handleClick() {
-    console.log(this);
   }
 
   render() {
@@ -84,7 +87,7 @@ class App extends Component {
                 render={() => (
                   <>
                     <TopBar />
-                    <Landing handleClick={this.handleClick} />
+                    <Landing />
                     <InfoBar />
                     <Planets />
                     <Footer />
@@ -101,11 +104,74 @@ class App extends Component {
                 )}
               />
               <Route
-                path="/planet"
+                path="/Mercury"
                 render={() => (
                   <>
                     <TopBar />
-                    <Planet />
+                    <Mercury />
+                  </>
+                )}
+              />
+              <Route
+                path="/Venus"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Venus />
+                  </>
+                )}
+              />
+              <Route
+                path="/Earth"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Earth />
+                  </>
+                )}
+              />
+              <Route
+                path="/Mars"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Mars />
+                  </>
+                )}
+              />
+              <Route
+                path="/Jupiter"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Jupiter />
+                  </>
+                )}
+              />
+              <Route
+                path="/Saturn"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Saturn />
+                  </>
+                )}
+              />
+              <Route
+                path="/Uranus"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Uranus />
+                  </>
+                )}
+              />
+              <Route
+                path="/Neptune"
+                render={() => (
+                  <>
+                    <TopBar />
+                    <Neptune />
                   </>
                 )}
               />

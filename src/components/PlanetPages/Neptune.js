@@ -5,7 +5,7 @@ import { Card, CardMedia } from "@rmwc/card";
 import { Elevation } from "@rmwc/elevation";
 
 // Image import
-import Mercury from "../../images/large_images/Mercury_large.jpg";
+import Neptune from "../../images/large_images/Neptune_large.jpg";
 
 // CSS
 import "./PlanetPage.css";
@@ -25,7 +25,7 @@ export default function InfoBar() {
       <div
         className="planet-background"
         style={{
-          backgroundImage: `url(${Mercury})`
+          backgroundImage: `url(${Neptune})`
         }}
       />
       <Elevation z={4} key={5} className="planet-content">
@@ -33,13 +33,13 @@ export default function InfoBar() {
           <CardMedia
             square
             style={{
-              backgroundImage: `url(${Mercury})`
+              backgroundImage: `url(${Neptune})`
             }}
           />
         </Card>
         <div className="card-content">
           <Typography use="headline2" className="header-underlined">
-            Mercury
+            Neptune
           </Typography>
           <Typography use="body1">
             This is going to be the description of the planet.This is going to
