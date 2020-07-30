@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 
 // Components
@@ -79,8 +79,8 @@ class App extends Component {
           textIconOnDark: "rgba(255, 255, 255, 0.5)",
         }}
       >
-        <Router>
-          <>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Switch>
             <ScrollToTop>
               <TopBar />
               <Route
@@ -109,7 +109,7 @@ class App extends Component {
               <Route path="/Neptune" render={() => <Neptune />} />
               <Footer />
             </ScrollToTop>
-          </>
+          </Switch>
         </Router>
       </ThemeProvider>
     );

@@ -2,7 +2,7 @@
   "name": "star_struck",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://KaWaite.github.io/star-struck/",
+  "homepage": "http://KaWaite.github.io/star-struck",
   "dependencies": {
     "@rmwc/button": "^5.7.2",
     "@rmwc/card": "^5.7.2",
