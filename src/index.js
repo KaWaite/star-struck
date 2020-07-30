@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App";
 import { RMWCProvider } from "@rmwc/provider";
 
-import * as serviceWorker from "./serviceWorker";
-
 ReactDOM.render(
   <RMWCProvider
     // Global options
@@ -15,5 +13,3 @@ ReactDOM.render(
   </RMWCProvider>,
   document.getElementById("root")
 );
-
-serviceWorker.unregister();
