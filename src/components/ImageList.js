@@ -1,14 +1,5 @@
 import React, { Component } from "react";
-import {
-  Card,
-  CardPrimaryAction,
-  CardMedia
-  // CardActions,
-  // CardActionButtons,
-  // CardActionButton,
-  // CardActionIcons,
-  // CardActionIcon
-} from "@rmwc/card";
+import { Card, CardPrimaryAction, CardMedia } from "@rmwc/card";
 import { Grid, GridCell } from "@rmwc/grid";
 import { Typography } from "@rmwc/typography";
 
@@ -34,47 +25,47 @@ export default class List extends Component {
           image: Image1,
           title: "Our Changing Planet",
           author: "Curt Wagner",
-          content: "Visit nine places on our planet."
+          content: "Visit nine places on our planet.",
         },
         {
           id: 1,
           image: Image2,
           title: "Our Planet",
           author: "Chir Agner",
-          content: "Visit nine places on our planet."
+          content: "Visit nine places on our planet.",
         },
         {
           id: 2,
           image: Image3,
           title: "Changing Planet",
           author: "Yabai Man",
-          content: "The biggest changes today."
+          content: "The biggest changes today.",
         },
         {
           id: 3,
           image: Image4,
           title: "Planet Earth",
           author: "Bobby Marlye",
-          content: "Hello from Space."
-        }
-      ]
+          content: "Hello from Space.",
+        },
+      ],
     };
   }
   render() {
-    const articleItems = this.state.articles.map(article => (
+    const articleItems = this.state.articles.map((article) => (
       <GridCell span={6} phone={12}>
         <Card
           style={{
             border: "none",
             boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.2)",
-            margin: "0 20px 20px 0 "
+            margin: "0 20px 20px 0 ",
           }}
         >
           <CardPrimaryAction>
             <CardMedia
               sixteenByNine
               style={{
-                backgroundImage: `url(${article.image})`
+                backgroundImage: `url(${article.image})`,
               }}
             />
             <div style={{ padding: "0 1rem 1rem 1rem" }}>

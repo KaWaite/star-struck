@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardPrimaryAction,
   CardActions,
-  CardActionButton
+  CardActionButton,
 } from "@rmwc/card";
 import { ListDivider } from "@rmwc/list";
 import { Typography } from "@rmwc/typography";
@@ -17,7 +18,7 @@ export default class News extends Component {
     return (
       <Card
         style={{
-          marginRight: "80px"
+          marginRight: "80px",
         }}
       >
         <Typography
@@ -26,7 +27,7 @@ export default class News extends Component {
           theme="textPrimaryOnDark"
           style={{
             padding: "0.5rem 1rem",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
         >
           latest
@@ -35,14 +36,16 @@ export default class News extends Component {
         <ListDivider />
 
         <CardPrimaryAction>
-          <div style={{ padding: "1rem" }}>
-            <Typography theme="textPrimaryOnDark" use="headline5" tag="div">
-              SpaceX To The Rescue
-            </Typography>
-            <Typography use="body1" tag="p" theme="textPrimaryOnDark">
-              Elon Musk is coming to the rescue at SpaceX. Learn More.
-            </Typography>
-          </div>
+          <Link to={`/article`} className="link">
+            <div style={{ padding: "1rem" }}>
+              <Typography theme="textPrimaryOnDark" use="headline5" tag="div">
+                SpaceX To The Rescue
+              </Typography>
+              <Typography use="body1" tag="p" theme="textPrimaryOnDark">
+                Elon Musk is coming to the rescue at SpaceX. Learn More.
+              </Typography>
+            </div>
+          </Link>
         </CardPrimaryAction>
 
         <ListDivider />

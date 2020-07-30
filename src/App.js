@@ -9,6 +9,7 @@ import InfoBar from "./components/InfoBar";
 import Footer from "./components/Footer";
 import ImageOTD from "./components/ImageOTD/ImageOTD";
 import Planets from "./components/Planets/Planets";
+import Article from "./components/Article";
 
 import Mercury from "./components/PlanetPages/Mercury";
 import Venus from "./components/PlanetPages/Venus";
@@ -30,19 +31,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageURL: ""
+      imageURL: "",
     };
   }
 
   componentDidMount() {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=YciADzaLHVWHVGSFgZg93VU9DRiF6F1zapyLfyK9"
+        "https://api.nasa.gov/planetary/apod?date=2020-02-02&api_key=qKH3s557Kmp2v6v6lR6OoOm709wTaAJKkTA1nkwv"
       )
-      .then(response => {
+      .then((response) => {
         this.setState({ imageURL: response.data.url });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   }
@@ -75,106 +76,38 @@ class App extends Component {
           textSecondaryOnDark: "rgba(255, 255, 255, 0.7)",
           textHintOnDark: "rgba(255, 255, 255, 0.5)",
           textDisabledOnDark: "rgba(255, 255, 255, 0.5)",
-          textIconOnDark: "rgba(255, 255, 255, 0.5)"
+          textIconOnDark: "rgba(255, 255, 255, 0.5)",
         }}
       >
         <Router>
           <>
             <ScrollToTop>
+              <TopBar />
               <Route
                 exact
                 path="/"
                 render={() => (
                   <>
-                    <TopBar />
                     <Landing />
                     <InfoBar />
                     <Planets />
-                    <Footer />
                   </>
                 )}
               />
+              <Route path="/article" render={() => <Article />} />
               <Route
                 path="/image"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <ImageOTD image={imageURL} />
-                  </>
-                )}
+                render={() => <ImageOTD image={imageURL} />}
               />
-              <Route
-                path="/Mercury"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Mercury />
-                  </>
-                )}
-              />
-              <Route
-                path="/Venus"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Venus />
-                  </>
-                )}
-              />
-              <Route
-                path="/Earth"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Earth />
-                  </>
-                )}
-              />
-              <Route
-                path="/Mars"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Mars />
-                  </>
-                )}
-              />
-              <Route
-                path="/Jupiter"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Jupiter />
-                  </>
-                )}
-              />
-              <Route
-                path="/Saturn"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Saturn />
-                  </>
-                )}
-              />
-              <Route
-                path="/Uranus"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Uranus />
-                  </>
-                )}
-              />
-              <Route
-                path="/Neptune"
-                render={() => (
-                  <>
-                    <TopBar />
-                    <Neptune />
-                  </>
-                )}
-              />
+              <Route path="/Mercury" render={() => <Mercury />} />
+              <Route path="/Venus" render={() => <Venus />} />
+              <Route path="/Earth" render={() => <Earth />} />
+              <Route path="/Mars" render={() => <Mars />} />
+              <Route path="/Jupiter" render={() => <Jupiter />} />
+              <Route path="/Saturn" render={() => <Saturn />} />
+              <Route path="/Uranus" render={() => <Uranus />} />
+              <Route path="/Neptune" render={() => <Neptune />} />
+              <Footer />
             </ScrollToTop>
           </>
         </Router>

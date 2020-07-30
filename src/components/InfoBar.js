@@ -11,7 +11,7 @@ import "../globalStyles/Typography.css";
 export default class InfoBar extends Component {
   render() {
     let info;
-    if (window.matchMedia("(max-width: 1100px)").matches) {
+    if (window.matchMedia("(max-width: 780px)").matches) {
       /* The viewport is less than, or equal to, 700 pixels wide */
       info = (
         <>
@@ -40,7 +40,7 @@ export default class InfoBar extends Component {
       <div
         style={{
           paddingTop: "10vh",
-          paddingBottom: "10vh"
+          paddingBottom: "10vh",
         }}
       >
         <div
@@ -49,7 +49,7 @@ export default class InfoBar extends Component {
             margin: "auto",
             paddingTop: "5vh",
             paddingBottom: "5vh",
-            width: "80%"
+            width: "80%",
           }}
         >
           <Typography
