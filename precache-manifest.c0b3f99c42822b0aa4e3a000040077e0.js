@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f85177cc8665bf1d6c3f64cc2791c6c",
+    "revision": "45ef9b1b3938f30fcc8b1a7d46937aea",
     "url": "/star-struck/index.html"
   },
   {
-    "revision": "c20ded45959f08fe7168",
+    "revision": "224063ed7e61a549df3e",
     "url": "/star-struck/static/css/2.e884dcd1.chunk.css"
   },
   {
-    "revision": "59f2798c315af4ce6124",
+    "revision": "55ccef1d198d4daef844",
     "url": "/star-struck/static/css/main.3a446d74.chunk.css"
   },
   {
-    "revision": "c20ded45959f08fe7168",
-    "url": "/star-struck/static/js/2.8c2f10f1.chunk.js"
+    "revision": "224063ed7e61a549df3e",
+    "url": "/star-struck/static/js/2.74d5e2ad.chunk.js"
   },
   {
     "revision": "981d302396af250969551bb21c06e41c",
-    "url": "/star-struck/static/js/2.8c2f10f1.chunk.js.LICENSE.txt"
+    "url": "/star-struck/static/js/2.74d5e2ad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59f2798c315af4ce6124",
-    "url": "/star-struck/static/js/main.fbf5662c.chunk.js"
+    "revision": "55ccef1d198d4daef844",
+    "url": "/star-struck/static/js/main.7f69b98f.chunk.js"
   },
   {
     "revision": "78f946b586168e3a9175",
