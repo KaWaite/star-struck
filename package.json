@@ -17,7 +17,7 @@
     "@rmwc/theme": "^5.7.2",
     "@rmwc/top-app-bar": "^5.7.2",
     "@rmwc/typography": "^5.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "leaflet": "^1.6.0",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "react": "^16.13.1",
